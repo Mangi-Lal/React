@@ -1,18 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//This we use for ES5
+// var React = require('react'); 
+// var ReactDom = require('react-dom');
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
-  <h1>Hello World</h1>
-);
+// This is for ES6
+import React from "react";
+import ReactDom from "react-dom";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDom.render(<h1> Mangi Lal</h1>,
+    document.getElementById("root")); // "root" is in index.html...
+
+{/* <h1> Hello World!!!</h1> // this is not html. this is JSX expression in react */}
+
