@@ -1,3 +1,4 @@
+//App.jsx
 import React from "react";
 import Heading from "./Heading";
 import Para from "./Para";
@@ -12,5 +13,4 @@ function app(){
         </>
     );
 }
-
 export default app;

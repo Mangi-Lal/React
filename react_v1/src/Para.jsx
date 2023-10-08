@@ -1,3 +1,4 @@
+//Para.jsx
 import React from "react";
 
 function Para(){
