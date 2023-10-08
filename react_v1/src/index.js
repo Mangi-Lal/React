@@ -1,17 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const date = new Date();
-// const todayDate = date.getDate()+"/"+date.getMonth()+"/"+date.getFullYear();
-// const currtime = date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
-/* These both are same*/
-const todayDate = date.toLocaleDateString();
-const currtime = date.toLocaleTimeString();
+const img1 = "https://picsum.photos/200/300";
+const img2 = "https://picsum.photos/250/300";
+const img3 = "https://picsum.photos/400/300";
+const portfolio = 'https://mangilal-portfolio.netlify.app/';
+
 ReactDOM.render(
   <>
-    <h1>Hello, My Name is Mangi Lal</h1>
-    <p>Todays Date is {todayDate}</p>
-    <p>Current time is {currtime}</p>
+    <h1 contentEditable="true">Hello, My Name is Mangi Lal</h1>
+    <img src={img1} alt="randomimg"/>
+    <img src={img2} alt="randomimg"/>
+    <a href={portfolio} target="_blank">
+      <img src={img3} alt="randomimg"/> 
+    </a>
   </>
   
   ,document.getElementById("root")
