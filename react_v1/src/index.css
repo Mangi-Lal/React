@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.heading{
+/* .heading{
   color: #fa9191;
   text-align: center;
   text-transform: capitalize;
@@ -12,7 +12,7 @@
   text-shadow: 0px 2px 4px #ffe9c5;
   margin: 50px 0;
   font-family: 'Josefin Slab', serif;
-}
+} */
 .img_div{
   display: flex;
   justify-content: center;
