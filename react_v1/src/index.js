@@ -1,20 +1,15 @@
-//This we use for ES5
-// var React = require('react'); 
-// var ReactDom = require('react-dom');
-
-// This is for ES6
 import React from "react";
-import ReactDom from "react-dom";
+import ReactDOM from "react-dom";
 
-const fname = 'Mangi';
-const lname = 'Lal';
-ReactDom.render(
+const date = new Date();
+const todayDate = date.getDate()+"/"+date.getMonth()+"/"+date.getFullYear();
+const currtime = date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+ReactDOM.render(
   <>
-    <h1> {`My Name is ${fname} ${lname}`}</h1>
+    <h1>Hello, My Name is Mangi Lal</h1>
+    <p>Todays Date is {todayDate}</p>
+    <p>Current time is {currtime}</p>
   </>
   
   ,document.getElementById("root")
-); // "root" is in index.html...
-
-{/* <h1> Hello World!!!</h1> // this is not html. this is JSX expression in react */}
-
+);
