@@ -7,11 +7,10 @@ import React from "react";
 import ReactDom from "react-dom";
 
 const fname = 'Mangi';
+const lname = 'Lal';
 ReactDom.render(
   <>
-    <h1>My First name is {fname}</h1>
-    <p>My lucky Number is {9 * 4}</p>
-    <p>Random Number {Math.random()}</p>
+    <h1> {`My Name is ${fname} ${lname}`}</h1>
   </>
   
   ,document.getElementById("root")
