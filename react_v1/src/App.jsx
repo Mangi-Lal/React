@@ -1,16 +1,31 @@
 //App.jsx
 import React from "react";
-import Heading from "./Heading";
-import Para from "./Para";
-import List from "./List";
+import './index.css';
 
-function app(){
-    return (
+function App(){
+    let currDate = new Date();
+    let currTime = currDate.getHours();
+    let greeting = '';
+    const cssStyle = {};
+    // conditional statements
+    if(currTime>=1 && currTime<12){
+        greeting = 'Good Morning';
+        //dynamically adding color to cssStyle object.
+        cssStyle.color = 'green'; 
+    }else if(currTime>=12 && currTime<19){
+        greeting = 'Good Afternoon';
+        cssStyle.color = 'orange';
+    }else{
+        greeting = 'Good Night';
+        cssStyle.color = 'gray';
+    }
+    return(
         <>
-        <Heading/>
-        <Para/>
-        <List/>
+        <div>
+            <h1> Hello Sir, <span style={cssStyle}> {greeting} </span> </h1>
+        </div>
         </>
     );
 }
-export default app;
+
+export default App;
