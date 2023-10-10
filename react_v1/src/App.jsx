@@ -1,14 +1,16 @@
 //App.jsx
-const youtuber = 'Carryminati';
-const favprog = 'CPP';
+import React from "react";
+import {add,sub,mul,div} from './Calculator';
 
-function myName(){
-    let Name = 'Mangi Lal';
-    return (Name);
+let App = () => {
+    return(
+        <>
+            <li>Sum of two numbers is: {add(30,6)}</li>
+            <li>Substraction of two numbers is: {sub(30,6)}</li>
+            <li>Multiplication of two numbers is: {mul(30,6)}</li>
+            <li>Division of two numbers is: {div(30,7)}</li>
+        </>
+    );
 }
-function myRollNo(){
-    let rollno = '201060';
-    return (rollno);
-}
-export default youtuber;
-export {favprog,myName,myRollNo};
+
+export default App;

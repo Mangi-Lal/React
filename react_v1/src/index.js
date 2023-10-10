@@ -1,17 +1,9 @@
 //index.js
 import React from "react";
 import ReactDOM from "react-dom";
-// import youtuber,{favprog,myName,myRollNo} from "./App";
-import * as details from './App';
+import App from "./App";
+
 ReactDOM.render(
-  <>
-  <ol>
-    <li>Helloooooo</li>
-    <li>{details.default}</li>
-    <li>{details.favprog}</li>
-    <li>{details.myName()}</li>
-    <li>{details.myRollNo()}</li>
-  </ol>
-  </>,
+  <App/>,
   document.getElementById('root')
 );
