@@ -1,3 +1,4 @@
+// Cards.jsx
 import React from "react";
 
 function Card(props){
@@ -6,7 +7,7 @@ function Card(props){
     <div className="cards">
       <div className="card ">
         <img src={props.imgsrc} 
-          alt="myPic" className="card_img"
+          alt="myPic" className="card__img"
         /> 
         <div className="card__info">
           <span className="card__category"> {props.title} </span>
