@@ -1,22 +1,18 @@
 //App.jsx
-import React from "react";
-import SlotM from "./SlotM";
-
+import React, { useState } from "react";
+// let count = 1;
 const App = () =>{
+    const state = useState();
+    const [count,setCount] = useState(0);
+    //[current value,updated value] = useState(initial value)
+    let IncNum = () =>{
+        setCount(count+1);
+        // console.log(count);
+    }
     return(
     <>
-       <h1 className="heading_style"> 
-       🎰 Welcome to <span style = {{fontWeight:'bold'}}> Slot machine game</span> 🎰</h1>
-        <div className="slotmachine">
-            <SlotM x='😂' y='😂' z='😂'/>
-            <hr/>
-            <SlotM x='😁' y='🎉' z='🤸‍♂️'/>
-            <hr/>
-            <SlotM x='🌹' y='🙌' z='💖'/>
-            <hr/>
-            <SlotM x='✨' y='✨' z='✨'/>
-            <hr/>
-        </div>
+       <h1> {count} </h1>
+       <button onClick={IncNum}> Click Me </button>
     </>
     );
 }

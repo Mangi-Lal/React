@@ -1,3 +1,4 @@
+// SlotM.jsx
 import React from "react";
 let SlotM = (props) =>{
     //This is Object Destructuring
