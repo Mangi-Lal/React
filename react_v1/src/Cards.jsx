@@ -1,5 +1,6 @@
 // Cards.jsx
 import React from "react";
+import Heading from "./Heading";
 
 function Card(props){
     return (
@@ -11,7 +12,7 @@ function Card(props){
         /> 
         <div className="card__info">
           <span className="card__category"> {props.title} </span>
-          <h3 className="card__title"> {props.sname} </h3>
+          <Heading sname={props.sname}/>
           <a 
             href={props.link}
             target="_blank">

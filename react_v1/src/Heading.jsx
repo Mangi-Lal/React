@@ -1,8 +1,8 @@
 //Heading.jsx
 import React from "react";
 
-function heading(){
-    return <h1>My Name is Mangi Lal</h1>;
+function heading(props){
+    return (<h3 className="card__title"> {props.sname} </h3>);
 }
 
 export default heading;
