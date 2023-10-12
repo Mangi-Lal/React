@@ -21,6 +21,13 @@ var Sdata = [
         title:"A Netflix Original Series",
         sname:"Stranger Things",
         link:"https://www.netflix.com/in/title/80057281"
+    },
+    {
+        id:4,
+        imgsrc:"https://wallpapercave.com/wp/IULDNMh.jpg",
+        title:"A Amazon Original Series",
+        sname:"The Vampire Diaries",
+        link:"https://www.primevideo.com/detail/The-Vampire-Diaries/0HG2QOPONEONZPP2ZXNMA6M8Q7"
     }
 ]
 
