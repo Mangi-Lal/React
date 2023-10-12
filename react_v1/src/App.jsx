@@ -1,15 +1,22 @@
 //App.jsx
 import React from "react";
-import Netflix from "./Netflix";
-import Amazon from "./Amazon";
-
-const favseries = 'netflix';
+import SlotM from "./SlotM";
 
 const App = () =>{
     return(
     <>
-        <h1 className="heading_style"> Top Web series in 2020 </h1>
-        {favseries === 'netflix'?<Netflix/>:<Amazon/>}
+       <h1 className="heading_style"> 
+       🎰 Welcome to <span style = {{fontWeight:'bold'}}> Slot machine game</span> 🎰</h1>
+        <div className="slotmachine">
+            <SlotM x='😂' y='😂' z='😂'/>
+            <hr/>
+            <SlotM x='😁' y='🎉' z='🤸‍♂️'/>
+            <hr/>
+            <SlotM x='🌹' y='🙌' z='💖'/>
+            <hr/>
+            <SlotM x='✨' y='✨' z='✨'/>
+            <hr/>
+        </div>
     </>
     );
 }
