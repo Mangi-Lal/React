@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Josefin+Slab:wght@100&family=Raleway:wght@100&family=Roboto:wght@100&display=swap');
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
 *{
   box-sizing: border-box;
   padding: 0;
@@ -9,10 +14,10 @@
   text-align: center;
   background-color: #fff;
   text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   letter-spacing: 2px;
-  font-weight: 700;
+  font-weight: 500;
   color: #868686;
   font-size: 1.5rem;
   margin-bottom: 30px;
@@ -48,7 +53,7 @@
   background-color: #fff;
 }
 .card__category{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 13px;
@@ -60,14 +65,14 @@
 .card__title{
   margin-top: 5px;
   margin-bottom: 1Opx;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #fff;
   text-transform: capitalize;
 }
 button{
   padding: 5px 8px;
   /* font-family: "Raleway", sans-serif; */
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
@@ -84,6 +89,17 @@ button{
     margin: 5%;
     width: 90%;
   }
+}
+
+.slot_inner{
+  text-align: center;
+}
+.slotmachine{
+  border: 4px solid rgb(143,133,133);
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 /* body{
   background-color: #b4f2e1;
