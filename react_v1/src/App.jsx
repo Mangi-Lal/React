@@ -12,41 +12,12 @@ const App = () =>{
     const inputValue = (event) =>{
         // setfName(event.target.value);
 
-        const {value,name} = event.target;
+        const {name,value} = event.target;
         setfName((preValue) =>{
-            if(name === "fName"){
-                //As we know initial value of useState(),we passed, is an object.
-                //so we are required to return an object.
-                return {
-                    fname: value,
-                    lname: preValue.lname,
-                    email: preValue.email,
-                    phone: preValue.phone,
-                }
-            }
-            else if(name === "lName"){
-                return {
-                    fname: preValue.fname,
-                    lname: value,
-                    email: preValue.email,
-                    phone: preValue.phone,
-                }
-            }
-            else if(name === "email"){
-                return {
-                    fname: preValue.fname,
-                    lname: preValue.lname,
-                    email: value,
-                    phone: preValue.phone,
-                }
-            }
-            else if(name === "phone"){
-                return {
-                    fname: preValue.fname,
-                    lname: preValue.lname,
-                    email: preValue.email,
-                    phone: value,
-                }
+            //here preValue is an object holding value of object we passed in useState()
+            return {
+                ...preValue,
+                [name]: value,
             }
         })
     }
@@ -65,13 +36,14 @@ const App = () =>{
                 <p>{fullName.phone}</p>
                 <input type="text" 
                     placeholder="Enter Your Name"
-                    name="fName" 
+                    //Now fname is matching with value's fname.
+                    name="fname" 
                     onChange={inputValue}
                     value={fullName.fname}
                 />
                 <input type="text" 
                     placeholder="Enter Your Last Name"
-                    name="lName" 
+                    name="lname" 
                     onChange={inputValue}
                     value={fullName.lname}
                 />
