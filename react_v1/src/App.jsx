@@ -1,18 +1,19 @@
 //App.jsx
 import React, { useState } from "react";
-// let count = 1;
+
 const App = () =>{
-    const state = useState();
-    const [count,setCount] = useState(0);
-    //[current value,updated value] = useState(initial value)
-    let IncNum = () =>{
-        setCount(count+1);
-        // console.log(count);
+    let newtime = new Date().toLocaleTimeString();
+    const [ctime, setCtime] = useState(newtime);
+
+    const UpdateTime = () =>{
+        newtime = new Date().toLocaleTimeString();
+        setCtime(newtime);
+
     }
     return(
     <>
-       <h1> {count} </h1>
-       <button onClick={IncNum}> Click Me </button>
+       <h1> {ctime} </h1>
+       <button onClick={UpdateTime}> Get Time </button>
     </>
     );
 }
