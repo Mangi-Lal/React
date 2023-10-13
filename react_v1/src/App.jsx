@@ -2,30 +2,46 @@
 import React, { useState } from "react";
 
 const App = () =>{
-    const [inputData,setData] = useState();
-    const [FullName,setName] = useState();
-    //When we trigger onChange then inputValue function is called 
-    //and one object is also passed to inputValue, which we are 
-    //taking as (event). 
-    const inputValue = (event) =>{
-        //user jo bhi type krega 'event.target.value' ke through access kr skte h.
-        // console.log(event.target.value);
-        setData(event.target.value);
+    const [firstData,setfData] = useState();
+    const [FirstName,setfName] = useState();
+
+    const [lastData,setlData] = useState();
+    const [LastName,setlName] = useState();
+    const inputValuetwo = (event) =>{
+        setlData(event.target.value);
     }
-    const onSubmit = () =>{
-        //bcz we are storing input data in variable 'inputData'
-        //this is called 'single source of truth'.
-        setName(inputData);
+
+    const inputValue = (event) =>{
+        setfData(event.target.value);
+    }
+    const onSubmit = (event) =>{
+        //It is used to prevent default form behaviour
+        event.preventDefault();
+        setfName(firstData);
+        setlName(lastData);
     }
     return(
     <>
-      <h1> Hello {FullName} </h1>
-      <input type="text" 
-        placeholder="Enter Your Name" 
-        onChange={inputValue}
-        value={inputData}/>
-      <button onClick={onSubmit}> Click Me</button>
+    <div className="main_div">
+        <form onSubmit={onSubmit}>
+            <div>
+                <h1> Hello {FirstName} {LastName} </h1>
+                <input type="text" 
+                    placeholder="Enter Your Name" 
+                    onChange={inputValue}
+                    value={firstData}
+                />
+                <input type="text" 
+                    placeholder="Enter Your Last Name" 
+                    onChange={inputValuetwo}
+                    value={lastData}
+                />
+                <button type="submit"> Submit</button>
+            </div>
+        </form>
+    </div>
     </>
+
     );
 }
 
