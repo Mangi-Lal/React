@@ -126,6 +126,10 @@ div{
   /* margin-top: -30px;  */
   flex-direction: column;
 }
+p{
+  color: black;
+  background: transparent;
+}
 /* body{
   background-color: #b4f2e1;
   box-sizing: border-box;
