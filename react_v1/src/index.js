@@ -1,9 +1,9 @@
 //index.js
 import React from "react";
 import ReactDOM from "react-dom";
-import './index.css';
-import DigitalClock from "./DigitalClock";
+// import './index.css';
+import BootStrap from "./BootStrap";
 
 ReactDOM.render(
-  <DigitalClock/>,document.getElementById('root')
+  <BootStrap/>,document.getElementById('root')
 );
