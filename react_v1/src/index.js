@@ -1,9 +1,10 @@
 //index.js
 import React from "react";
 import ReactDOM from "react-dom";
-// import './index.css';
-import BootStrap from "./BootStrap";
+import Accordion from "./Accordion/Accordion";
+
+
 
 ReactDOM.render(
-  <BootStrap/>,document.getElementById('root')
+  <Accordion/>,document.getElementById('root')
 );
