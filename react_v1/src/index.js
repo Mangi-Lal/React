@@ -1,10 +1,8 @@
 //index.js
 import React from "react";
 import ReactDOM from "react-dom";
-import Accordion from "./Accordion/Accordion";
-
-
+import App from './ContextApi/App';
 
 ReactDOM.render(
-  <Accordion/>,document.getElementById('root')
+  <App/>,document.getElementById('root')
 );
