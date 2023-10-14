@@ -1,6 +1,8 @@
+//Incdec.jsx
 import React, { useState } from "react";
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
+// import Button from '@mui/material/Button';
 
 const Incdec = () =>{
     const [num,setNum] = useState(1);
@@ -22,10 +24,10 @@ const Incdec = () =>{
             <div className="center_div">
                 <h1> {num} </h1>
                 <div className="btn_div">
-                    <button onClick={IncNum} > <AddIcon sx={{fontSize:40, color:'green', background: 'transparent' }}/> </button>
-                    
+                    <button onClick={IncNum}> <AddIcon sx={{fontSize:40, color:'green', background: 'transparent' }}/> </button>
+                    {/* <AddIcon sx={{fontSize:40, color:'green', background: 'transparent' }}/> */}
                     <button onClick={DecNum}> <DeleteIcon sx={{fontSize:40, color: 'red', background: 'transparent' }}/> </button>
-                    
+                    {/* <Button onClick={DecNum}> <DeleteIcon sx={{fontSize:40, color: 'red', background: 'transparent' }}/> </Button> */}
                 </div>
             </div>
         </div>

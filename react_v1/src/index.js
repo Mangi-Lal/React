@@ -2,9 +2,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import './index.css';
-import App from "./App";
-import Incdec from "./Incdec";
+import DigitalClock from "./DigitalClock";
 
 ReactDOM.render(
-  <Incdec/>,document.getElementById('root')
+  <DigitalClock/>,document.getElementById('root')
 );
