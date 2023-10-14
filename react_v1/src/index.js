@@ -3,7 +3,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import './index.css';
 import App from "./App";
+import Incdec from "./Incdec";
 
 ReactDOM.render(
-  <App/>,document.getElementById('root')
+  <Incdec/>,document.getElementById('root')
 );
