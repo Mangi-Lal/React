@@ -6,7 +6,6 @@ const ComC = () =>{
     return (
         <>
         <FirstName.Consumer>
-            {/* Provider jo value me pass krta h vo fname me aa jayega. */}
             {(fname) =>{
                 return(
                     <LastName.Consumer>
