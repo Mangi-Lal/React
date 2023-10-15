@@ -1,4 +1,15 @@
+a {
+    color: aqua;
+}
 #sidebar a.active {
     color: greenyellow;
     border-bottom: 1px solid red;
+}
+
+.menu_style{
+    width: l00px;
+    line-height: 60px;
+    background-color: #20232a;
+    display: flex;
+    justify-content: space-around;
 }

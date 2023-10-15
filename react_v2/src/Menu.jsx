@@ -17,9 +17,10 @@ const Menu = () =>{
         Default active class
         By default, an active class is added to a <NavLink> component when it is active so you can use CSS to style it. */}
 
-        <nav id="sidebar">
+        <nav id="sidebar" className="menu_style">
         <NavLink to={'/'}> AboutMe </NavLink >
         <NavLink to={'/contact'}> Contact </NavLink >
+        <NavLink to={'/service'}> Services </NavLink>
         </nav>
         </>
     );
