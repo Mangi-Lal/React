@@ -1,0 +1,4 @@
+#sidebar a.active {
+    color: greenyellow;
+    border-bottom: 1px solid red;
+}
