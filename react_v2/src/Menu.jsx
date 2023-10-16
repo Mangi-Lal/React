@@ -20,6 +20,7 @@ const Menu = () =>{
         <nav id="sidebar" className="menu_style">
         <NavLink to={'/'}> AboutMe </NavLink >
         <NavLink to={'/contact'}> Contact </NavLink >
+        <NavLink to={'/search'}> Search </NavLink>
         <NavLink to={'/service'}> Services </NavLink>
         {/* /user/mangi/lal is default user  */}
         <NavLink to={'/user/mangi/lal'}> User </NavLink>
