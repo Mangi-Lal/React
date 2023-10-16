@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jewellery_shop/static/css/main.073c9b0a.css",
+    "main.js": "/jewellery_shop/static/js/main.a1567a7e.js",
+    "static/js/787.86b9507e.chunk.js": "/jewellery_shop/static/js/787.86b9507e.chunk.js",
+    "index.html": "/jewellery_shop/index.html",
+    "main.073c9b0a.css.map": "/jewellery_shop/static/css/main.073c9b0a.css.map",
+    "main.a1567a7e.js.map": "/jewellery_shop/static/js/main.a1567a7e.js.map",
+    "787.86b9507e.chunk.js.map": "/jewellery_shop/static/js/787.86b9507e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.a1567a7e.js"
+  ]
+}
