@@ -17,7 +17,7 @@ const Search = () => {
             onChange={imgDesc}
             placeholder='search anything'/>
         </div>
-        {img==='null'?null:<Sresult Name={img}/>}
+        {img===''?null:<Sresult Name={img}/>}
         </>
     );
 }
