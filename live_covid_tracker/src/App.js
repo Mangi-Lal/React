@@ -1,7 +1,8 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
+import Covid from './Covid';
 
 const App = () => {
-    return <h1>Hellooooo</h1>
+    return <Covid/>;
 }
 
 export default App;
